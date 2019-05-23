@@ -14,7 +14,7 @@ class Preproccess:
 			content = f.read()
 
 
-		stop_words = list(content.encode('utf-8').split('\n'))
+		stop_words = list(unicode(content,'utf-8').split('\n'))
   		return stop_words
 
 
